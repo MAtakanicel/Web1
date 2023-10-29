@@ -1,0 +1,357 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Playpen Sans", cursive;
+  background-image: url(../img/wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.section_title {
+  margin-bottom: 30px;
+}
+
+.section_title h2 {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  transition: all 2000ms ease-in-out;
+}
+
+.section_title h2:hover {
+  border-radius: 40px;
+  padding-left: 20%;
+  background-color: #cb5c12;
+}
+
+/* Header */
+header {
+  background: #1c1b1be8;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+.menu_bar{
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  padding: 10px 0;
+}
+.nav_cat {
+  display: flex;
+}
+
+.nav_cat li a {
+  margin-left: 20px;
+  color: #fff;
+  padding: 5px 25px;
+  border-radius: 5px;
+  transition: all 500ms ease-in;
+}
+.nav_cat li a:hover {
+  background: #ff0000;
+}
+
+.logo h2 a {
+  font-size: 35px;
+  color: rgba(133, 40, 40, 0.485);
+}
+/* Anasayfa */
+.homepage {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 18%;
+}
+.child_homepage {
+  flex-basis: 45%s;
+}
+.child_homepage h6 {
+  color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+  padding-top: -20px;
+  font-size: 50px;
+}
+.child_homepage h5 {
+  color: red;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.child_homepage img {
+  border-radius: 50%;
+  margin: auto 25px;
+  position: relative;
+  left: -150px;
+}
+
+/* Hakkımda*/
+.in_about {
+  width: 80%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.child_about img {
+  border-radius: 50%;
+  padding: 25%;
+  margin: auto 25px;
+  position: relative;
+  left: -50px;
+}
+.child_about {
+  flex-basis: 45%;
+}
+.child_about h1 {
+  position: relative;
+  left: -200px;
+  font-size: 50px;
+  color: #ed0202;
+}
+.span {
+  position: relative;
+  left: 30px;
+  top: -30px;
+  font-size: 35px;
+  color: #fff;
+}
+.description {
+  position: relative;
+  left: -200px;
+  font-size: 20px;
+  color: #24caac;
+}
+
+.skills {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+  margin: 0 auto;
+  color: #fff;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.container .progress {
+  position: relative;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #444 linear-gradient(to right, transparent 50%, var(--clr) 0);
+}
+
+.container .progress h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  z-index: 1;
+  font-weight: 500;
+}
+
+.container .progress h3 span {
+  font-size: 0.75em;
+  font-weight: 400;
+}
+
+.container .progress h4 {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-weight: 500;
+  color: var(--clr);
+}
+.container .progress::before {
+  content: "";
+  display: block;
+  height: 100%;
+  margin-left: 50%;
+  transform-origin: left;
+  border-radius: 0 100% 100% 0/50%;
+}
+.container .progress::after {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border-radius: 50%;
+  background: #222;
+}
+
+.container .progress::before {
+  background: var(--clr);
+  transform: rotate(calc((var(--i) - 50) * 0.01turn));
+}
+
+.container .progress.less::before {
+  background: #444;
+  transform: rotate(calc(((var(--i)) * 0.01turn)));
+}
+
+/* Projeler */
+
+.projeler {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+.projects{
+  display: flex;
+
+}
+.child_projects {
+  position: relative;
+  align-items: center;
+  margin: auto;
+}
+
+.child_projects img {
+ padding-left: 35%;
+ padding-right: 30%;
+  margin: auto;
+}
+
+.child_project p{
+  color: #24caac;
+  margin: auto;
+  font-size: 35px;
+  padding-left: 15%;
+  padding-right: 15%;
+
+}
+.contpr{
+  padding-left: 35%;
+  padding-right: 35%;
+}
+
+/* İletişim */
+
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.contact
+
+.child_contact{
+margin: auto; 
+flex-basis: 45%;
+}
+.child_contact form{
+  padding: 50px 40px;
+  background: #2F363E;
+  border-radius: 25px;
+}
+
+.child_contact form input,textarea{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #24292D;
+  border: none;
+  resize: none;
+  border-radius: 25px;
+  transition: .3s ease-in-out;
+}
+
+
+.child_contact form input,textarea:focus{
+  color: #ffffff;
+}
+
+.child_contact form input:focus{
+  letter-spacing: 3px;
+}
+
+.child_contact form textarea:focus{
+  letter-spacing: 3px;
+}
+
+
+.child_contact form input:last-child{
+  margin-bottom: 0;
+  width: 40%;
+  margin-left: 30%;
+  background: #24caac;
+  border: 2px solid #24caac;
+  transition: .3s ;
+  }
+
+  .child_contact form input:last-child:hover{
+    background: transparent;
+    color: #fff;
+
+  }
+
+  .footer{
+    border-top: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    background:#000000b3;
+    align-items: center;
+  }
+.footer_content a{
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #00abf0;
+  border-radius: 50%;
+  font-size: 25px;
+  color: #2F363E;
+  margin: 20px;
+}
